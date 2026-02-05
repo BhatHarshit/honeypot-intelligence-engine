@@ -1,0 +1,118 @@
+{
+  "info": {
+    "name": "Honeypot Intelligence Engine Tests",
+    "_postman_id": "12345678-abcd-efgh-ijkl-9876543210ab",
+    "description": "Collection to test /honeypot/analyze endpoint for hackathon requirements",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Scam Message - UPI Request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Send me ₹5000 via UPI immediately\",\n  \"conversation_id\": \"abc123\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/honeypot/analyze",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["honeypot", "analyze"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Safe Message - Greeting",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Hello friend, how are you?\",\n  \"conversation_id\": \"abc124\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/honeypot/analyze",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["honeypot", "analyze"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Scam Message - Prize Link",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Congratulations! You won a prize, click here\",\n  \"conversation_id\": \"abc125\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/honeypot/analyze",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["honeypot", "analyze"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Scam Message - Phishing Bank",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Your KYC failed, send bank details to http://fake-bank.in\",\n  \"conversation_id\": \"abc126\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/honeypot/analyze",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["honeypot", "analyze"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Safe Message - Random Chat",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Are you coming to the meeting today?\",\n  \"conversation_id\": \"abc127\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/honeypot/analyze",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["honeypot", "analyze"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
