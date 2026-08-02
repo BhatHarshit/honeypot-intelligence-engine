@@ -1,11 +1,11 @@
-# DPDP Compliance Intelligence System
+# DPDP Compliance Intelligence System 
 
 An enterprise-grade Privacy Engineering Platform that monitors, detects, 
 and reports personal data exposure risks in organizational datasets — 
 aligned with India's Digital Personal Data Protection (DPDP) Act 2023.
-
+ going to commplete the phase one of this project tomorrow
 ---
-
+phase one tomorrwo 
 ## Problem Statement
 
 Organizations handling personal data face significant compliance challenges 
