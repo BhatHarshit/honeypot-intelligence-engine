@@ -5,7 +5,7 @@ and reports personal data exposure risks in organizational datasets —
 aligned with India's Digital Personal Data Protection (DPDP) Act 2023.
  going to commplete the phase one of this project tomorrow
 ---
-phase one in developing stage right now 
+phase one in developing stage right  
 ## Problem Statement
 
 Organizations handling personal data face significant compliance challenges 
